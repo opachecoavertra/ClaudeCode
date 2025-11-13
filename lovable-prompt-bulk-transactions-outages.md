@@ -1,15 +1,15 @@
-# Lovable Prompt: Bulk Transactions & Outages Monitoring
+# Lovable Prompt: Executed Processes
 
 ## Overview
-Add a new menu option in the main navigation for **"Transactions & Outages"** that allows customers to view bulk transactions and monitor outages reports with real-time status tracking for Pennsylvania American Water services.
+Add a new menu option in the main navigation for **"Executed Processes"** that allows customers to view bulk transactions and monitor outages reports with real-time status tracking for Pennsylvania American Water services.
 
 ## Feature Structure
 
 ### Main Menu Item
-**Title:** Transactions & Outages
+**Title:** Executed Processes
 **Icon:** Activity/Chart icon combined with alert/warning icon
 **Location:** Main navigation menu (top level)
-**Route:** `/transactions-outages`
+**Route:** `/executed-processes`
 
 ## Page Layout
 
@@ -411,8 +411,8 @@ Each outage should display as a card with:
 ## Implementation Requirements
 
 ### Page-Level Requirements
-1. Add "Transactions & Outages" to the main navigation menu (top level)
-2. Create route `/transactions-outages` with two-section layout
+1. Add "Executed Processes" to the main navigation menu (top level)
+2. Create route `/executed-processes` with two-section layout
 3. Implement tab navigation or split-panel view for the two sections
 4. Ensure all data is responsive and mobile-friendly
 5. Add loading states for all API calls
@@ -477,7 +477,7 @@ Each outage should display as a card with:
 ## SEO & Meta Information
 
 ### Page Title
-Transactions & Outages - Monitor Your Account Activity | Pennsylvania American Water
+Executed Processes - Monitor Your Account Activity | Pennsylvania American Water
 
 ### Meta Description
 View your bulk transaction history and monitor real-time service outages for Pennsylvania American Water. Track payments, see outage status, and get restoration updates.
