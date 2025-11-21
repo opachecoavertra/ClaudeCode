@@ -1,0 +1,231 @@
+<mxfile host="app.diagrams.net" modified="2025-11-21T00:00:00.000Z" agent="Claude Code" version="22.0.0">
+  <diagram name="Claude Code Orchestration - MiCustomer 2.0" id="orchestration">
+    <mxGraphModel dx="2400" dy="1600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3000" pageHeight="2400" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Swim Lanes -->
+        <mxCell id="lane1" value="Human Stakeholders" style="swimlane;horizontal=0;fillColor=#E8F5E9;strokeColor=#4CAF50;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="2880" height="360" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="lane2" value="Claude Code Main Agent" style="swimlane;horizontal=0;fillColor=#BBDEFB;strokeColor=#1565C0;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="400" width="2880" height="360" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="lane3" value="Claude Code Subagents" style="swimlane;horizontal=0;fillColor=#E3F2FD;strokeColor=#42A5F5;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="760" width="2880" height="360" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="lane4" value="Claude Code Skills" style="swimlane;horizontal=0;fillColor=#F3E5F5;strokeColor=#7E57C2;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1120" width="2880" height="360" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="lane5" value="Hooks &amp; Automation" style="swimlane;horizontal=0;fillColor=#FFF3E0;strokeColor=#FF9800;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1480" width="2880" height="360" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="lane6" value="External Tools" style="swimlane;horizontal=0;fillColor=#F5F5F5;strokeColor=#757575;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1840" width="2880" height="360" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 0: Human Input -->
+        <mxCell id="phase0-start" value="START&#xa;Phase 0&#xa;Human Input" style="ellipse;fillColor=#4CAF50;strokeColor=#2E7D32;fontColor=#FFFFFF;fontStyle=1;" vertex="1" parent="lane1">
+          <mxGeometry x="80" y="120" width="140" height="100" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="phase0-workshop" value="Stakeholder Workshop&#xa;Duration: 1-2 weeks&#xa;Output: Strategic Vision" style="rounded=1;fillColor=#81C784;strokeColor=#4CAF50;fontStyle=1;" vertex="1" parent="lane1">
+          <mxGeometry x="260" y="100" width="180" height="140" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="phase0-templates" value="AI Template Agent&#xa;Provides Input Forms" style="rounded=1;fillColor=#64B5F6;strokeColor=#1976D2;" vertex="1" parent="lane2">
+          <mxGeometry x="260" y="100" width="180" height="100" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="phase0-docs" value="Phase 0 Deliverables&#xa;- Strategic Vision&#xa;- Tech Foundation&#xa;- Compliance Matrix" style="shape=cylinder;fillColor=#90A4AE;strokeColor=#546E7A;" vertex="1" parent="lane6">
+          <mxGeometry x="480" y="100" width="180" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 1: Discovery -->
+        <mxCell id="phase1-playbook" value="Generate Phase 1&#xa;Playbook&#xa;Agent: Main (95%)" style="rounded=1;fillColor=#2196F3;strokeColor=#1565C0;fontColor=#FFFFFF;fontStyle=1;" vertex="1" parent="lane2">
+          <mxGeometry x="700" y="80" width="180" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="phase1-approval" value="Playbook&#xa;Approval" style="rhombus;fillColor=#81C784;strokeColor=#4CAF50;" vertex="1" parent="lane1">
+          <mxGeometry x="720" y="100" width="140" height="140" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="phase1-orchestrate" value="Orchestrate&#xa;Discovery Agents&#xa;6 parallel agents" style="rounded=1;fillColor=#1976D2;strokeColor=#0D47A1;fontColor=#FFFFFF;fontStyle=1;" vertex="1" parent="lane2">
+          <mxGeometry x="920" y="80" width="180" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="phase1-discovery" value="Discovery Agent&#xa;(85%)&#xa;System Analysis" style="rounded=1;fillColor=#42A5F5;strokeColor=#1976D2;" vertex="1" parent="lane3">
+          <mxGeometry x="920" y="60" width="150" height="100" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="phase1-analysis" value="Analysis Agent&#xa;(80%)&#xa;Deep Analysis" style="rounded=1;fillColor=#42A5F5;strokeColor=#1976D2;" vertex="1" parent="lane3">
+          <mxGeometry x="920" y="180" width="150" height="100" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="phase1-skills" value="Skills:&#xa;• system-analyzer&#xa;• code-parser&#xa;• dependency-mapper" style="rounded=1;fillColor=#9C27B0;strokeColor=#6A1B9A;fontColor=#FFFFFF;" vertex="1" parent="lane4">
+          <mxGeometry x="920" y="100" width="180" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="phase1-entry" value="Entry Gate Hook&#xa;✓ Phase 0 complete&#xa;✓ Resources ready" style="rounded=1;fillColor=#FFA726;strokeColor=#F57C00;fontStyle=1;" vertex="1" parent="lane5">
+          <mxGeometry x="720" y="100" width="160" height="100" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="phase1-exit" value="Exit Gate Hook&#xa;✓ Discovery 100%&#xa;✓ Validation >90%" style="rounded=1;fillColor=#FFA726;strokeColor=#F57C00;fontStyle=1;" vertex="1" parent="lane5">
+          <mxGeometry x="1140" y="100" width="160" height="100" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="phase1-aha" value="Aha!&#xa;Strategy Tracking" style="shape=cylinder;fillColor=#9E9E9E;strokeColor=#616161;" vertex="1" parent="lane6">
+          <mxGeometry x="1000" y="100" width="120" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- Strategy Layer Super Box -->
+        <mxCell id="strategy-box" value="STRATEGY LAYER&#xa;Phases 2-4&#xa;&#xa;Phase 2: Documentation (4 weeks)&#xa;Phase 3: Traceability (3 weeks)&#xa;Phase 4: Domain Modeling (4 weeks)&#xa;&#xa;Features: 18 agents, 12 skills&#xa;Tools: Aha! + Google Drive" style="rounded=1;fillColor=#C8E6C9;strokeColor=#4CAF50;fontStyle=1;fontSize=12;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;" vertex="1" parent="lane2">
+          <mxGeometry x="1340" y="60" width="280" height="220" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="strategy-agents" value="Parallel Agents:&#xa;• Documentation (6)&#xa;• Traceability (7)&#xa;• Domain Modeling (6)" style="rounded=1;fillColor=#81C784;strokeColor=#4CAF50;" vertex="1" parent="lane3">
+          <mxGeometry x="1340" y="100" width="280" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- Design Layer Super Box -->
+        <mxCell id="design-box" value="DESIGN LAYER&#xa;Phases 5-8&#xa;&#xa;Phase 5: Optimization (4 weeks)&#xa;Phase 6: Atomic Design (5 weeks)&#xa;Phase 7: Journey Design (4 weeks)&#xa;Phase 8: Configuration T4 (4 weeks)&#xa;&#xa;Features: 26 agents, 15 skills&#xa;Tools: Jira + Lucid" style="rounded=1;fillColor=#BBDEFB;strokeColor=#1976D2;fontStyle=1;fontSize=12;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;" vertex="1" parent="lane2">
+          <mxGeometry x="1660" y="60" width="300" height="220" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="design-agents" value="Parallel Agents:&#xa;• Optimization (7)&#xa;• Atomic Design (6)&#xa;• Journey/T2/T3 (6)&#xa;• T4 Config (5)" style="rounded=1;fillColor="#64B5F6;strokeColor=#1976D2;" vertex="1" parent="lane3">
+          <mxGeometry x="1660" y="100" width="300" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="design-skills" value="Key Skills:&#xa;• atomic-design-mapper&#xa;• t4-config-generator&#xa;• journey-persona-mapper" style="rounded=1;fillColor=#9C27B0;strokeColor=#6A1B9A;fontColor=#FFFFFF;" vertex="1" parent="lane4">
+          <mxGeometry x="1660" y="100" width="300" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- Execution Layer Super Box -->
+        <mxCell id="execution-box" value="EXECUTION LAYER&#xa;Phases 9-13&#xa;&#xa;Phase 9: Integration (4 weeks)&#xa;Phase 10: Performance (5 weeks)&#xa;Phase 11: Implementation (15 weeks)&#xa;Phase 12: Testing (8 weeks)&#xa;Phase 13: Deployment (6 weeks)&#xa;&#xa;Features: 24 agents, 13 skills&#xa;Tools: Jira + GitHub + CI/CD" style="rounded=1;fillColor=#E1BEE7;strokeColor=#7B1FA2;fontStyle=1;fontSize=12;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;" vertex="1" parent="lane2">
+          <mxGeometry x="2000" y="60" width="320" height="220" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="execution-agents" value="Parallel Agents:&#xa;• Integration (5)&#xa;• Performance (5)&#xa;• Implementation (6)&#xa;• QA (6)&#xa;• Deployment (6)" style="rounded=1;fillColor=#BA68C8;strokeColor=#7B1FA2;" vertex="1" parent="lane3">
+          <mxGeometry x="2000" y="100" width="320" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="execution-bg" value="Background Tasks:&#xa;• Code generation (120h)&#xa;• Test execution (40h)&#xa;• Build pipeline (24h)" style="rounded=1;dashed=1;fillColor=#FFE082;strokeColor=#F57C00;" vertex="1" parent="lane3">
+          <mxGeometry x="2000" y="240" width="320" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- End -->
+        <mxCell id="phase13-end" value="END&#xa;Production&#xa;Deployment" style="ellipse;fillColor=#4CAF50;strokeColor=#2E7D32;fontColor=#FFFFFF;fontStyle=1;" vertex="1" parent="lane1">
+          <mxGeometry x="2390" y="120" width="140" height="100" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="monitoring" value="Continuous&#xa;Monitoring&#xa;&amp; Optimization" style="rounded=1;fillColor=#FFA726;strokeColor=#F57C00;fontStyle=1;" vertex="1" parent="lane5">
+          <mxGeometry x="2390" y="100" width="140" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- Connections -->
+        <mxCell id="conn1" edge="1" parent="1" source="phase0-start" target="phase0-workshop">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="conn2" edge="1" parent="1" source="phase0-workshop" target="phase0-templates">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="conn3" edge="1" parent="1" source="phase0-templates" target="phase0-docs">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="conn4" edge="1" parent="1" source="phase0-docs" target="phase1-playbook">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="conn5" edge="1" parent="1" source="phase1-playbook" target="phase1-approval">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="conn6" edge="1" parent="1" source="phase1-approval" target="phase1-orchestrate">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="860" y="170" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="conn7" edge="1" parent="1" source="phase1-orchestrate" target="phase1-discovery" style="strokeWidth=2;strokeColor=#1976D2;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="conn8" edge="1" parent="1" source="phase1-orchestrate" target="phase1-analysis" style="strokeWidth=2;strokeColor=#1976D2;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="conn9" edge="1" parent="1" source="phase1-discovery" target="phase1-skills" style="dashed=1;strokeColor=#9C27B0;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="conn10" edge="1" parent="1" source="phase1-orchestrate" target="phase1-aha">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="conn11" edge="1" parent="1" source="phase1-exit" target="strategy-box">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="conn12" edge="1" parent="1" source="strategy-box" target="design-box">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="conn13" edge="1" parent="1" source="design-box" target="execution-box">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="conn14" edge="1" parent="1" source="execution-box" target="phase13-end">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Layer Labels -->
+        <mxCell id="label-strategy" value="STRATEGY LAYER&#xa;Aha! Management" style="text;fontSize=16;fontStyle=1;fontColor=#4CAF50;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="10" width="280" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="label-design" value="DESIGN LAYER&#xa;Jira Tracking" style="text;fontSize=16;fontStyle=1;fontColor=#1976D2;" vertex="1" parent="1">
+          <mxGeometry x="1660" y="10" width="300" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="label-execution" value="EXECUTION LAYER&#xa;Jira + CI/CD" style="text;fontSize=16;fontStyle=1;fontColor=#7B1FA2;" vertex="1" parent="1">
+          <mxGeometry x="2000" y="10" width="320" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Legend -->
+        <mxCell id="legend-box" value="LEGEND" style="rounded=0;fillColor=#FFFFFF;strokeColor=#000000;fontStyle=1;fontSize=14;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="2560" y="400" width="320" height="400" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="legend-agent" value="Agent/Process" style="rounded=1;fillColor=#2196F3;strokeColor=#1565C0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="2580" y="440" width="120" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="legend-decision" value="Decision" style="rhombus;fillColor=#81C784;strokeColor=#4CAF50;" vertex="1" parent="1">
+          <mxGeometry x="2640" y="520" width="80" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="legend-hook" value="Quality Gate" style="rounded=1;fillColor=#FFA726;strokeColor=#F57C00;" vertex="1" parent="1">
+          <mxGeometry x="2580" y="620" width="120" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="legend-bg" value="Background Task" style="rounded=1;dashed=1;fillColor=#FFE082;strokeColor=#F57C00;" vertex="1" parent="1">
+          <mxGeometry x="2580" y="700" width="120" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="legend-text" value="─── Sequential Flow&#xa;- - - Skill Invocation&#xa;━━━ Parallel Execution" style="text;fontSize=12;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2720" y="440" width="140" height="80" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
