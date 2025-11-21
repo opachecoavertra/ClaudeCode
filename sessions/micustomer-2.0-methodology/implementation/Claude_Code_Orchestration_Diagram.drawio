@@ -311,7 +311,7 @@
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
 
-        <mxCell id="arrow-design-execution" value="LAYER TRANSITION&#10;Design → Execution" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=6;strokeColor="#FF6F00;endArrow=classic;endFill=1;fontSize=14;fontStyle=1;labelBackgroundColor=#FFFFFF;dashed=1;" edge="1" parent="1" source="phases-design-layer" target="phases-execution-layer">
+        <mxCell id="arrow-design-execution" value="LAYER TRANSITION&#10;Design → Execution" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=6;strokeColor=#FF6F00;endArrow=classic;endFill=1;fontSize=14;fontStyle=1;labelBackgroundColor=#FFFFFF;dashed=1;" edge="1" parent="1" source="phases-design-layer" target="phases-execution-layer">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
 
@@ -334,7 +334,7 @@
         </mxCell>
 
         <!-- Pattern 2 -->
-        <mxCell id="pattern2" value="PATTERN 2: SKILL-BASED SPECIALIZATION&#10;&#10;40+ modular skills invoked by subagents on-demand&#10;• Domain Modeling (DDD Expert)&#10;• Atomic Design Mapper (6-level hierarchy)&#10;• T4 Configuration Generator (Universal framework)&#10;• GraphRAG Knowledge Operations&#10;• Code Generation & Testing&#10;&#10;Example: Discovery Agent invokes Domain Modeling Skill" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9C27B0;strokeWidth=3;fontSize=13;fontStyle=1;align=left;spacingLeft=15;verticalAlign=top;spacingTop=15;" vertex="1" parent="1">
+        <mxCell id="pattern2" value="PATTERN 2: SKILL-BASED SPECIALIZATION&#10;&#10;40+ modular skills invoked by subagents on-demand&#10;• Domain Modeling (DDD Expert)&#10;• Atomic Design Mapper (6-level hierarchy)&#10;• T4 Configuration Generator (Universal framework)&#10;• GraphRAG Knowledge Operations&#10;• Code Generation &amp; Testing&#10;&#10;Example: Discovery Agent invokes Domain Modeling Skill" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9C27B0;strokeWidth=3;fontSize=13;fontStyle=1;align=left;spacingLeft=15;verticalAlign=top;spacingTop=15;" vertex="1" parent="1">
           <mxGeometry x="750" y="2200" width="550" height="220" as="geometry"/>
         </mxCell>
 
@@ -349,17 +349,17 @@
         </mxCell>
 
         <!-- Pattern 5 -->
-        <mxCell id="pattern5" value="PATTERN 5: BACKGROUND TASK PARALLELIZATION&#10;&#10;26 long-running background tasks (8-120 hours)&#10;• Parallel codebase scanning (non-blocking)&#10;• Continuous analysis pipelines&#10;• Build & test automation&#10;• Performance profiling&#10;• Security scanning&#10;&#10;Example: Discovery agents run 12-hour background scan" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#00ACC1;strokeWidth=3;fontSize=13;fontStyle=1;align=left;spacingLeft=15;verticalAlign=top;spacingTop=15;" vertex="1" parent="1">
+        <mxCell id="pattern5" value="PATTERN 5: BACKGROUND TASK PARALLELIZATION&#10;&#10;26 long-running background tasks (8-120 hours)&#10;• Parallel codebase scanning (non-blocking)&#10;• Continuous analysis pipelines&#10;• Build &amp; test automation&#10;• Performance profiling&#10;• Security scanning&#10;&#10;Example: Discovery agents run 12-hour background scan" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#00ACC1;strokeWidth=3;fontSize=13;fontStyle=1;align=left;spacingLeft=15;verticalAlign=top;spacingTop=15;" vertex="1" parent="1">
           <mxGeometry x="2550" y="2200" width="550" height="220" as="geometry"/>
         </mxCell>
 
         <!-- Pattern 6 -->
-        <mxCell id="pattern6" value="PATTERN 6: TOOL INTEGRATION ORCHESTRATION&#10;&#10;Seamless enterprise tool coordination&#10;• Aha! (Strategy Layer): Phases 1-4 work management&#10;• Jira (Design/Execution): Phases 5-13 tracking&#10;• Google Drive: Document collaboration & artifacts&#10;• Lucid: Architecture diagrams & process flows&#10;• n8n: Workflow automation orchestration&#10;• GitHub + CI/CD: Code management & deployment&#10;&#10;Example: Phase 1 completion triggers Jira story creation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#757575;strokeWidth=3;fontSize=13;fontStyle=1;align=left;spacingLeft=15;verticalAlign=top;spacingTop=15;" vertex="1" parent="1">
+        <mxCell id="pattern6" value="PATTERN 6: TOOL INTEGRATION ORCHESTRATION&#10;&#10;Seamless enterprise tool coordination&#10;• Aha! (Strategy Layer): Phases 1-4 work management&#10;• Jira (Design/Execution): Phases 5-13 tracking&#10;• Google Drive: Document collaboration &amp; artifacts&#10;• Lucid: Architecture diagrams &amp; process flows&#10;• n8n: Workflow automation orchestration&#10;• GitHub + CI/CD: Code management &amp; deployment&#10;&#10;Example: Phase 1 completion triggers Jira story creation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#757575;strokeWidth=3;fontSize=13;fontStyle=1;align=left;spacingLeft=15;verticalAlign=top;spacingTop=15;" vertex="1" parent="1">
           <mxGeometry x="150" y="2450" width="950" height="200" as="geometry"/>
         </mxCell>
 
         <!-- Pattern 7 -->
-        <mxCell id="pattern7" value="PATTERN 7: HUMAN-IN-THE-LOOP GOVERNANCE&#10;&#10;Strategic human intervention at critical decision points&#10;• Phase 0: 100% human strategic input&#10;• Phase Entry: Approval for high-risk phases&#10;• Confidence Escalation: Auto-escalate when <80%&#10;• Quality Gate Failures: Human review & remediation&#10;• Architecture Decisions: Human approval for major changes&#10;• Go-Live Approval: Final human sign-off&#10;&#10;Example: Architecture agent escalates at 75% confidence" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E91E63;strokeWidth=3;fontSize=13;fontStyle=1;align=left;spacingLeft=15;verticalAlign=top;spacingTop=15;" vertex="1" parent="1">
+        <mxCell id="pattern7" value="PATTERN 7: HUMAN-IN-THE-LOOP GOVERNANCE&#10;&#10;Strategic human intervention at critical decision points&#10;• Phase 0: 100% human strategic input&#10;• Phase Entry: Approval for high-risk phases&#10;• Confidence Escalation: Auto-escalate when &lt;80%&#10;• Quality Gate Failures: Human review &amp; remediation&#10;• Architecture Decisions: Human approval for major changes&#10;• Go-Live Approval: Final human sign-off&#10;&#10;Example: Architecture agent escalates at 75% confidence" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E91E63;strokeWidth=3;fontSize=13;fontStyle=1;align=left;spacingLeft=15;verticalAlign=top;spacingTop=15;" vertex="1" parent="1">
           <mxGeometry x="1150" y="2450" width="950" height="200" as="geometry"/>
         </mxCell>
 
